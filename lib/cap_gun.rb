@@ -62,7 +62,6 @@ module CapGun
       def deployment_notification(capistrano)
         presenter = Presenter.new(capistrano)
         
-        content_type "text/plain"
         from         presenter.from
         recipients   presenter.recipients
         subject      presenter.subject
